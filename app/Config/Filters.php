@@ -2,6 +2,8 @@
 
 namespace Config;
 
+use App\Filters\AuthFilter;
+use App\Filters\SuratFilter;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
@@ -23,6 +25,8 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'isLoggedIn' => AuthFilter::class,
+        'isAdmin' => SuratFilter::class,
     ];
 
     /**
@@ -34,7 +38,7 @@ class Filters extends BaseConfig
     public $globals = [
         'before' => [
             // 'honeypot',
-            // 'csrf',
+            'csrf',
             // 'invalidchars',
         ],
         'after' => [
@@ -64,5 +68,62 @@ class Filters extends BaseConfig
      *
      * @var array
      */
-    public $filters = [];
+    public $filters = [
+        'isLoggedIn' => [
+            'before' => [
+                'dashboard',
+                'dashboard/*',
+                'profil',
+                'profil/*',
+                'changepassword',
+                'changepassword/*',
+                'user',
+                'user/*',
+                'surat',
+                'surat/*',
+                'ktp',
+                'ktp/*',
+                'kk',
+                'kk/*',
+                'sktm',
+                'sktm/*',
+                'pengantarnikah',
+                'pengantarnikah/*',
+                'pengantarpindah',
+                'pengantarpindah/*',
+                'kelahiran',
+                'kelahiran/*',
+                'kematian',
+                'kematian/*',
+                'keterangan',
+                'keterangan/*',
+                'waris',
+                'waris/*',
+                'surat_ktp',
+                'surat_ktp/*',
+                'surat_kk',
+                'surat_kk/*',
+                'surat_sktm',
+                'surat_sktm/*',
+                'surat_pindah',
+                'surat_pindah/*',
+                'surat_nikah',
+                'surat_nikah/*',
+                'surat_kelahiran',
+                'surat_kelahiran/*',
+                'surat_kematian',
+                'surat_kematian/*',
+                'surat_keterangan',
+                'surat_keterangan/*',
+                'surat_waris',
+                'surat_waris/*',
+            ]
+        ],
+        // 'isAdmin' => [
+        //     'after' => [
+        //         'surat',
+        //         'surat/*',
+        //     ]
+        // ]
+    ];
 }

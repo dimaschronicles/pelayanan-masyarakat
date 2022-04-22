@@ -6,11 +6,14 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('user/home');
-    }
+        if (session('nik')) {
+            return redirect()->to('dashboard');
+        }
 
-    public function dasbor()
-    {
-        return view('admin/dashboard');
+        $data = [
+            'title' => 'Home | Pelayanan Masyarakat',
+        ];
+
+        return view('user/home', $data);
     }
 }

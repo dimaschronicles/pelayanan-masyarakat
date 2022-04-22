@@ -1,0 +1,171 @@
+<?php
+
+namespace App\Database\Seeds;
+
+use CodeIgniter\Database\Seeder;
+
+class KelahiranSeeder extends Seeder
+{
+    public function run()
+    {
+        $tgl_lahir = '2021-11-10';
+        $data = [
+            [
+                'id_user' => '2',
+                'nama_kepkel' => 'Anggie Febriansyah',
+                'no_kk' => '3525013006770017',
+                // anak
+                'nama_anak' => 'Anggie',
+                'jk_anak' => 'Laki-laki',
+                'tempat_dilahirkan_anak' => 'Rumah',
+                'tempat_lahir_anak' => 'Kebumen',
+                'tanggal_lahir_anak' => date('Y-m-d', strtotime($tgl_lahir)),
+                'pukul' => '',
+                'jenis_kelahiran' => 'Tunggal',
+                'kelahiran_ke' => '1',
+                'penolong_kelahiran' => 'Bidan/Perawat',
+                'berat_anak' => '3',
+                'panjang_anak' => '50',
+                // ibu
+                'nik_ibu' => '3525013006770017',
+                'nama_ibu' => 'Niken Ayu Saputri',
+                'tanggal_lahir_ibu' => $tgl_lahir,
+                'umur_ibu' => 22,
+                'pekerjaan_ibu' => 'PELAJAR/MAHASISWA',
+                'alamat_ibu' => 'Klirong RT01/RW02',
+                'desa_ibu' => 'Klirong',
+                'kecamatan_ibu' => 'Petanahan',
+                'kabupaten_ibu' => 'Kebumen',
+                'provinsi_ibu' => 'Jawa Tengah',
+                'kebangsaan_ibu' => 'Indonesia',
+                'warga_negara_ibu' => 'WNI',
+                'tgl_pencatatan_perkawinan' => date('Y-m-d'),
+                // ayah
+                'nik_ayah' => '3525013006770017',
+                'nama_ayah' => 'Anggie Febriansyah',
+                'tanggal_lahir_ayah' => $tgl_lahir,
+                'umur_ayah' => 22,
+                'pekerjaan_ayah' => 'PELAJAR/MAHASISWA',
+                'alamat_ayah' => 'Klirong RT01/RW02',
+                'desa_ayah' => 'Klirong',
+                'kecamatan_ayah' => 'Petanahan',
+                'kabupaten_ayah' => 'Kebumen',
+                'provinsi_ayah' => 'Jawa Tengah',
+                'warga_negara_ayah' => 'WNI',
+                'kebangsaan_ayah' => 'Indonesia',
+                // pelapor
+                'nik_pelapor' => '3525013006770017',
+                'nama_pelapor' => 'Niken Ayu Saputri',
+                'umur_pelapor' => 22,
+                'jk_pelapor' => 'Perempuan',
+                'pekerjaan_pelapor' => 'PELAJAR/MAHASISWA',
+                'alamat_pelapor' => 'Klirong RT04/RW05',
+                'desa_pelapor' => 'Klirong',
+                'kecamatan_pelapor' => 'Petanahan',
+                'kabupaten_pelapor' => 'Kebumen',
+                'provinsi_pelapor' => 'Jawa Tengah',
+                // saksi 1
+                'nik_saksi_satu' => '3525013006770017',
+                'nama_saksi_satu' => 'Niken Ayu Saputri',
+                'umur_saksi_satu' => 22,
+                'pekerjaan_saksi_satu' => 'PELAJAR/MAHASISWA',
+                'alamat_saksi_satu' => 'Klirong RT04/RW05',
+                'desa_saksi_satu' => 'Klirong',
+                'kecamatan_saksi_satu' => 'Petanahan',
+                'kabupaten_saksi_satu' => 'Kebumen',
+                'provinsi_saksi_satu' => 'Jawa Tengah',
+                // saksi 2
+                'nik_saksi_dua' => '3525013006770017',
+                'nama_saksi_dua' => 'Dinda',
+                'umur_saksi_dua' => 22,
+                'pekerjaan_saksi_dua' => 'PELAJAR/MAHASISWA',
+                'alamat_saksi_dua' => 'Klirong RT04/RW05',
+                'desa_saksi_dua' => 'Klirong',
+                'kecamatan_saksi_dua' => 'Petanahan',
+                'kabupaten_saksi_dua' => 'Kebumen',
+                'provinsi_saksi_dua' => 'Jawa Tengah',
+                'tanggal' => date('Y-m-d'),
+                'status' => 'menunggu'
+            ],
+            [
+                'id_user' => '3',
+                'nama_kepkel' => 'Farhan Ramdhani Ashari',
+                'no_kk' => '3525011711086061',
+                // anak
+                'nama_anak' => 'Farhan',
+                'jk_anak' => 'Laki-laki',
+                'tempat_dilahirkan_anak' => 'Rumah',
+                'tempat_lahir_anak' => 'Brebes',
+                'tanggal_lahir_anak' => date('Y-m-d', strtotime($tgl_lahir)),
+                'pukul' => '',
+                'jenis_kelahiran' => 'Tunggal',
+                'kelahiran_ke' => '1',
+                'penolong_kelahiran' => 'Bidan/Perawat',
+                'berat_anak' => '3',
+                'panjang_anak' => '50',
+                // ibu
+                'nik_ibu' => '3525011711086061',
+                'nama_ibu' => 'Niken Ayu Saputri',
+                'tanggal_lahir_ibu' => $tgl_lahir,
+                'umur_ibu' => 22,
+                'pekerjaan_ibu' => 'PELAJAR/MAHASISWA',
+                'alamat_ibu' => 'Bojong RT01/RW02',
+                'desa_ibu' => 'Bojong',
+                'kecamatan_ibu' => 'Bojongsari',
+                'kabupaten_ibu' => 'Purbalingga',
+                'provinsi_ibu' => 'Jawa Tengah',
+                'kebangsaan_ibu' => 'Indonesia',
+                'warga_negara_ibu' => 'WNI',
+                'tgl_pencatatan_perkawinan' => date('Y-m-d'),
+                // ayah
+                'nik_ayah' => '3525011711086061',
+                'nama_ayah' => 'Farhan Ramdhani Ashari',
+                'tanggal_lahir_ayah' => $tgl_lahir,
+                'umur_ayah' => 22,
+                'pekerjaan_ayah' => 'PELAJAR/MAHASISWA',
+                'alamat_ayah' => 'Bojong RT01/RW02',
+                'desa_ayah' => 'Bojong',
+                'kecamatan_ayah' => 'Bojongsari',
+                'kabupaten_ayah' => 'Purbalingga',
+                'provinsi_ayah' => 'Jawa Tengah',
+                'warga_negara_ayah' => 'WNI',
+                'kebangsaan_ayah' => 'Indonesia',
+                // pelapor
+                'nik_pelapor' => '3525011711086061',
+                'nama_pelapor' => 'Niken Ayu Saputri',
+                'umur_pelapor' => 22,
+                'jk_pelapor' => 'Perempuan',
+                'pekerjaan_pelapor' => 'PELAJAR/MAHASISWA',
+                'alamat_pelapor' => 'Klirong RT04/RW05',
+                'desa_pelapor' => 'Klirong',
+                'kecamatan_pelapor' => 'Bojongsari',
+                'kabupaten_pelapor' => 'Purbalingga',
+                'provinsi_pelapor' => 'Jawa Tengah',
+                // saksi 1
+                'nik_saksi_satu' => '3525011711086061',
+                'nama_saksi_satu' => 'Niken Ayu Saputri',
+                'umur_saksi_satu' => 22,
+                'pekerjaan_saksi_satu' => 'PELAJAR/MAHASISWA',
+                'alamat_saksi_satu' => 'Klirong RT04/RW05',
+                'desa_saksi_satu' => 'Klirong',
+                'kecamatan_saksi_satu' => 'Bojongsari',
+                'kabupaten_saksi_satu' => 'Purbalingga',
+                'provinsi_saksi_satu' => 'Jawa Tengah',
+                // saksi 2
+                'nik_saksi_dua' => '3525011711086061',
+                'nama_saksi_dua' => 'Niken',
+                'umur_saksi_dua' => 22,
+                'pekerjaan_saksi_dua' => 'PELAJAR/MAHASISWA',
+                'alamat_saksi_dua' => 'Klirong RT04/RW05',
+                'desa_saksi_dua' => 'Klirong',
+                'kecamatan_saksi_dua' => 'Bojongsari',
+                'kabupaten_saksi_dua' => 'Purbalingga',
+                'provinsi_saksi_dua' => 'Jawa Tengah',
+                'tanggal' => date('Y-m-d'),
+                'status' => 'menunggu'
+            ],
+        ];
+
+        $this->db->table('kelahiran')->insertBatch($data);
+    }
+}

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title><?= $title; ?></title>
 
     <!-- Custom fonts for this template-->
     <link href="<?= base_url(); ?>/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,6 +17,10 @@
 
     <!-- Custom styles for this template-->
     <link href="<?= base_url(); ?>/css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="<?= base_url(); ?>/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>/css/my-style.css" rel="stylesheet">
 
 </head>
 
@@ -50,7 +54,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website <?= date('Y'); ?></span>
+                        <span>Copyright &copy; <?= date('Y'); ?> <a href="https://instagram.com/dimaschronicles" target="blank">@dimaschronicles</a></span>
                     </div>
                 </div>
             </footer>
@@ -72,15 +76,15 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Peringatan!</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-body">Apakah anda yakin ingin keluar dari website?</div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Tidak</button>
+                    <a class="btn btn-primary" href="/logout">Ya</a>
                 </div>
             </div>
         </div>
@@ -94,7 +98,12 @@
     <script src="<?= base_url(); ?>/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
+    <script src="<?= base_url(); ?>/datatables/jquery.dataTables.min.js"></script>
+    <script src="<?= base_url(); ?>/datatables/dataTables.bootstrap4.min.js"></script>
     <script src="<?= base_url(); ?>/js/sb-admin-2.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="<?= base_url(); ?>/js/demo/datatables-demo.js"></script>
 
 </body>
 
