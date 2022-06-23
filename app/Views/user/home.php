@@ -19,204 +19,64 @@
 </header>
 
 <!-- Features section-->
-<section class="py-5 border-bottom" id="features">
-    <div class="container px-5 my-5">
+<section class="py-5 border-bottom" id="daftarsurat">
+    <div class="container px-5 mb-3">
+        <div class="text-center mb-5">
+            <h2 class="fw-bolder">
+                <i class="bi bi-file-text"></i> Daftar Surat
+                <p class="lead mb-0 mt-3">Pilih surat yang ingin Anda dibuat!</p>
+            </h2>
+        </div>
         <div class="row gx-5">
-            <div class="col-lg-4 mb-5 mb-lg-0">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                <h2 class="h4 fw-bolder">Featured title</h2>
+            <div class="col-lg-6 mb-5 mb-lg-0">
                 <ul class="list-group">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                    <li class="list-group-item">A fourth item</li>
-                    <li class="list-group-item">And a fifth one</li>
+                    <li class="list-group-item"><i class="bi bi-file-earmark-fill"></i> Surat Permohonan Pembuatan KTP</li>
+                    <li class="list-group-item"><i class="bi bi-file-earmark-fill"></i> Surat Permohonan Pembuatan KK</li>
+                    <li class="list-group-item"><i class="bi bi-file-earmark-fill"></i> Surat Keterangan</li>
+                    <li class="list-group-item"><i class="bi bi-file-earmark-fill"></i> Surat Pengantar Pindah</li>
+                    <li class="list-group-item"><i class="bi bi-file-earmark-fill"></i> Surat Keterangan Kelahiran</li>
                 </ul>
             </div>
-            <div class="col-lg-4 mb-5 mb-lg-0">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                <h2 class="h4 fw-bolder">Featured title</h2>
+            <div class="col-lg-6 mb-5 mb-lg-0">
                 <ul class="list-group">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                    <li class="list-group-item">A fourth item</li>
-                    <li class="list-group-item">And a fifth one</li>
-                </ul>
-            </div>
-            <div class="col-lg-4">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                <h2 class="h4 fw-bolder">Featured title</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                    <li class="list-group-item">A fourth item</li>
-                    <li class="list-group-item">And a fifth one</li>
+                    <li class="list-group-item"><i class="bi bi-file-earmark-fill"></i> Surat Keterangan Meninggal Dunia / Kematian</li>
+                    <li class="list-group-item"><i class="bi bi-file-earmark-fill"></i> Surat Keterangan Tidak Mampu (SKTM)</li>
+                    <li class="list-group-item"><i class="bi bi-file-earmark-fill"></i> Surat Pengantar Nikah</li>
+                    <li class="list-group-item"><i class="bi bi-file-earmark-fill"></i> Surat Keterangan Waris</li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
 <!-- Pricing section-->
-<section class="bg-light py-5 border-bottom">
-    <div class="container px-5 my-5">
+<section class="bg-light py-5 border-bottom" id="tutorial">
+    <div class="container px-5">
         <div class="text-center mb-5">
-            <h2 class="fw-bolder">Pay as you grow</h2>
-            <p class="lead mb-0">With our no hassle pricing plans</p>
+            <h2 class="fw-bolder">
+                Tutorial
+            </h2>
+            <p class="lead mb-0 mt-3">Cara membuat surat diwebsite ini.</p>
         </div>
-        <div class="row gx-5 justify-content-center">
-            <!-- Pricing card free-->
-            <div class="col-lg-6 col-xl-4">
-                <div class="card mb-5 mb-xl-0">
-                    <div class="card-body p-5">
-                        <div class="small text-uppercase fw-bold text-muted">Free</div>
-                        <div class="mb-3">
-                            <span class="display-4 fw-bold">$0</span>
-                            <span class="text-muted">/ mo.</span>
-                        </div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                <strong>1 users</strong>
-                            </li>
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                5GB storage
-                            </li>
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                Unlimited public projects
-                            </li>
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                Community access
-                            </li>
-                            <li class="mb-2 text-muted">
-                                <i class="bi bi-x"></i>
-                                Unlimited private projects
-                            </li>
-                            <li class="mb-2 text-muted">
-                                <i class="bi bi-x"></i>
-                                Dedicated support
-                            </li>
-                            <li class="mb-2 text-muted">
-                                <i class="bi bi-x"></i>
-                                Free linked domain
-                            </li>
-                            <li class="text-muted">
-                                <i class="bi bi-x"></i>
-                                Monthly status reports
-                            </li>
-                        </ul>
-                        <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div>
-                    </div>
-                </div>
+        <div class="row gx-5">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <p class="font-monospace">
+                    1. Datang ke Balai Desa untuk dibuatkan akun. <br>
+                    2. Login ke website. <br>
+                    3. Masuk ke menu buat surat. <br>
+                    4. Pilih surat yang ingin dibuat. <br>
+                    5. Tunggu 1x24 jam untuk diverifikasi oleh admin dan tanda tangan kepala desa. User bisa melihat dibagian menu histori surat untuk informasi.<br>
+                    6. Jika sudah maka user bisa mengambil di balai desa tanpa dipungut biaya.<br>
+                </p>
             </div>
-            <!-- Pricing card pro-->
-            <div class="col-lg-6 col-xl-4">
-                <div class="card mb-5 mb-xl-0">
-                    <div class="card-body p-5">
-                        <div class="small text-uppercase fw-bold">
-                            <i class="bi bi-star-fill text-warning"></i>
-                            Pro
-                        </div>
-                        <div class="mb-3">
-                            <span class="display-4 fw-bold">$9</span>
-                            <span class="text-muted">/ mo.</span>
-                        </div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                <strong>5 users</strong>
-                            </li>
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                5GB storage
-                            </li>
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                Unlimited public projects
-                            </li>
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                Community access
-                            </li>
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                Unlimited private projects
-                            </li>
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                Dedicated support
-                            </li>
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                Free linked domain
-                            </li>
-                            <li class="text-muted">
-                                <i class="bi bi-x"></i>
-                                Monthly status reports
-                            </li>
-                        </ul>
-                        <div class="d-grid"><a class="btn btn-primary" href="#!">Choose plan</a></div>
-                    </div>
-                </div>
-            </div>
-            <!-- Pricing card enterprise-->
-            <div class="col-lg-6 col-xl-4">
-                <div class="card">
-                    <div class="card-body p-5">
-                        <div class="small text-uppercase fw-bold text-muted">Enterprise</div>
-                        <div class="mb-3">
-                            <span class="display-4 fw-bold">$49</span>
-                            <span class="text-muted">/ mo.</span>
-                        </div>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                <strong>Unlimited users</strong>
-                            </li>
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                5GB storage
-                            </li>
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                Unlimited public projects
-                            </li>
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                Community access
-                            </li>
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                Unlimited private projects
-                            </li>
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                Dedicated support
-                            </li>
-                            <li class="mb-2">
-                                <i class="bi bi-check text-primary"></i>
-                                <strong>Unlimited</strong>
-                                linked domains
-                            </li>
-                            <li class="text-muted">
-                                <i class="bi bi-check text-primary"></i>
-                                Monthly status reports
-                            </li>
-                        </ul>
-                        <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div>
-                    </div>
-                </div>
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <img src="/img/step.svg" alt="" width="500px">
             </div>
         </div>
     </div>
 </section>
 <!-- Maps Lokasi -->
-<section>
-    <div class="maps-text text-center mb-3 mt-3">
+<section id="lokasi">
+    <div class="maps-text text-center mb-3 mt-5">
         <h2 class="fw-bolder">
             <i class="bi bi-map-fill"></i> Lokasi
         </h2>
@@ -226,38 +86,32 @@
     </div>
 </section>
 <!-- Tentang section-->
-<section class="py-5 border-bottom">
-    <div class="container px-5 my-5 px-5">
-        <div class="text-center mb-5">
-            <h2 class="fw-bolder">Customer testimonials</h2>
-            <p class="lead mb-0">Our customers love working with us</p>
-        </div>
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-6">
-                <!-- Testimonial 1-->
-                <div class="card mb-4">
-                    <div class="card-body p-4">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
-                            <div class="ms-4">
-                                <p class="mb-1">Thank you for putting together such a great product. We loved working with you and the whole team, and we will be recommending you to others!</p>
-                                <div class="small text-muted">- Client Name, Location</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Testimonial 2-->
-                <div class="card">
-                    <div class="card-body p-4">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
-                            <div class="ms-4">
-                                <p class="mb-1">The whole team was a huge help with putting things together for our company and brand. We will be hiring them again in the near future for additional work!</p>
-                                <div class="small text-muted">- Client Name, Location</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<section class="py-5 border-bottom" id="tentang">
+    <div class="container px-5 mb-3">
+        <div class="row gx-5">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <ul class="list-group">
+                    <li class="list-group-item border-0">
+                        <img src="/img/maps-pin.png" width="20px">
+                        <span style="margin-left: 8px;">Desa Pangebatan Kec. Bantarkawung, Kabupaten Brebes, Jawa Tengah</span>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <img src="/img/telp.png" width="20px">
+                        <span style="margin-left: 8px;">671032</span>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <img src="/img/mail.png" width="20px">
+                        <span style="margin-left: 8px;">pangebatandesa@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <ul class="list-group">
+                    <li class="list-group-item border-0">
+                        <h4>Tentang Kami</h4>
+                        <p>Website ini dibuat untuk memenuhi tugas akhir skripsi.</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -265,7 +119,7 @@
 <!-- Footer-->
 <footer class="py-4 bg-dark">
     <div class="container px-5">
-        <p class="m-0 text-center text-white">&copy; <?= date("Y"); ?> Pelayanan Masyarakat by. <a href="https://www.instagram.com/dimaschronicles" style="text-decoration: none; color: white;">@dimaschronicles</a></p>
+        <p class="m-0 text-center text-white">&copy; <?= date("Y"); ?> Pelayanan Masyarakat</p>
     </div>
 </footer>
 <?= $this->endSection(); ?>
