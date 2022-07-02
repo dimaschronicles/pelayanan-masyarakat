@@ -54,7 +54,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; <?= date('Y'); ?> <a href="https://instagram.com/dimaschronicles" target="blank">@dimaschronicles</a></span>
+                        <span>Copyright &copy; <?= date('Y'); ?> Pelayanan Masyarakat</span>
                     </div>
                 </div>
             </footer>

@@ -8,7 +8,7 @@
                 <li class="nav-item"><a class="nav-link" href="#daftarsurat">Daftar Surat</a></li>
                 <li class="nav-item"><a class="nav-link" href="#tutorial">Tutorial</a></li>
                 <li class="nav-item"><a class="nav-link" href="#lokasi">Lokasi</a></li>
-                <li class="nav-item"><a class="nav-link" href="#tentang">Lokasi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
                 <li class="nav-item"><a class="nav-link <?= ($title == 'Login') ? 'active' : ''; ?>" href="/auth">Login</a></li>
             </ul>
         </div>

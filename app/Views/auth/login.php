@@ -46,7 +46,7 @@
 <!-- Footer-->
 <footer class="py-4 bg-dark fixed-bottom">
     <div class="container px-5">
-        <p class="m-0 text-center text-white">&copy; <?= date("Y"); ?> Pelayanan Masyarakat by. <a href="https://www.instagram.com/dimaschronicles" style="text-decoration: none; color: white;">@dimaschronicles</a></p>
+        <p class="m-0 text-center text-white">&copy; <?= date("Y"); ?> Pelayanan Masyarakat</p>
     </div>
 </footer>
 <script>
