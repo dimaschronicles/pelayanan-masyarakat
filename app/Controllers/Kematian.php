@@ -667,7 +667,13 @@ class Kematian extends BaseController
         return redirect()->to('/surat/kematian');
     }
 
-    public function printKematian()
+    public function printKematian($id)
     {
+        $data = [
+            'title' => 'Cetak Surat Keterangan Kematian',
+            'kematian' => $this->kematian->find($id)
+        ];
+
+        return view('kematian/kematian_print', $data);
     }
 }

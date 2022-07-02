@@ -172,7 +172,8 @@
 </body>
 
 <script>
-    window.print()
+    window.print();
+    window.onafterprint = window.close;
 </script>
 
 </html>
