@@ -29,6 +29,11 @@
                 <i class="fas fa-fw fa-plus-circle"></i>
                 <span>Buat Surat</span></a>
         </li>
+        <li class="nav-item <?= ($title == "Status Surat") ? 'active' : ''; ?>">
+            <a class="nav-link" href="/surat_status">
+                <i class="fas fa-fw fa-file"></i>
+                <span>Status Surat</span></a>
+        </li>
     <?php endif; ?>
 
     <!-- Admin -->
@@ -72,16 +77,20 @@
 
     <!-- User -->
     <?php if (session()->get('role') == 2) : ?>
-        <!-- Divider -->
-        <hr class="sidebar-divider">
+        <!-- <hr class="sidebar-divider">
 
-        <!-- Heading -->
         <div class="sidebar-heading">
             Histori Pembuatan Surat
         </div>
 
+        <li class="nav-item <?= ($title == "Riwayat Surat") ? 'active' : ''; ?>">
+            <a class="nav-link" href="">
+                <i class="fas fa-fw fa-history"></i>
+                <span>Riwayat Surat</span></a>
+        </li> -->
+
         <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item <?= ($title == 'Pembuatan KTP' || $title == 'Permohonan Pembuatan Kartu Keluarga' || $title == 'Pembuatan SKTM' || $title == 'Pembuatan Surat Keterangan' || $title == 'Pembuatan Pengantar Numpang Nikah' || $title == 'Pembuatan Pengantar Pindah' || $title == 'Pembuatan Pengantar Pindah' || $title == 'Pembuatan Surat Keterangan Kelahiran' || $title == 'Pembuatan Surat Keterangan Kematian' || $title == 'Pembuatan Surat Keterangan Ahli Waris') ? 'active' : ''; ?>">
+        <!-- <li class="nav-item <?= ($title == 'Pembuatan KTP' || $title == 'Permohonan Pembuatan Kartu Keluarga' || $title == 'Pembuatan SKTM' || $title == 'Pembuatan Surat Keterangan' || $title == 'Pembuatan Pengantar Numpang Nikah' || $title == 'Pembuatan Pengantar Pindah' || $title == 'Pembuatan Pengantar Pindah' || $title == 'Pembuatan Surat Keterangan Kelahiran' || $title == 'Pembuatan Surat Keterangan Kematian' || $title == 'Pembuatan Surat Keterangan Ahli Waris') ? 'active' : ''; ?>">
             <a class="nav-link <?= ($title == 'Pembuatan KTP' || $title == 'Permohonan Pembuatan Kartu Keluarga' || $title == 'Pembuatan SKTM' || $title == 'Pembuatan Surat Keterangan' || $title == 'Pembuatan Pengantar Numpang Nikah' || $title == 'Pembuatan Pengantar Pindah' || $title == 'Pembuatan Pengantar Pindah' || $title == 'Pembuatan Surat Keterangan Kelahiran' || $title == 'Pembuatan Surat Keterangan Kematian' || $title == 'Pembuatan Surat Keterangan Ahli Waris') ? 'active' : 'collapsed'; ?>" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                 <i class="fas fa-fw fa-file"></i>
                 <span>Histori Surat</span>
@@ -100,7 +109,7 @@
                     <a class="collapse-item <?= ($title == 'Pembuatan Surat Keterangan Ahli Waris') ? 'active' : ''; ?>" href="/waris/historiwaris">Keterangan Waris</a>
                 </div>
             </div>
-        </li>
+        </li> -->
     <?php endif; ?>
 
     <!-- Divider -->

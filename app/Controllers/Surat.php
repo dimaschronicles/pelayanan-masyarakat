@@ -36,6 +36,24 @@ class Surat extends BaseController
         return view('user/buat_surat', $data);
     }
 
+    public function status()
+    {
+        $data = [
+            'title' => 'Status Surat'
+        ];
+
+        return view('user/status_surat', $data);
+    }
+
+    public function riwayat()
+    {
+        $data = [
+            'title' => 'Riwayat Surat'
+        ];
+
+        return view('user/status_surat', $data);
+    }
+
     public function surat_ktp()
     {
         if (session()->get('role') == 2) {

@@ -54,6 +54,7 @@ $routes->delete('/user/(:num)', 'User::delete/$1', ['filter' => 'isAdmin']);
 
 // menu buat surat ktp, kk, dll. untuk user
 $routes->get('/surat', 'Surat::index');
+$routes->get('/surat_status', 'Surat::status');
 $routes->get('/surat_ktp', 'Surat::surat_ktp', ['filter' => 'isAdmin']);
 $routes->get('/surat_kk', 'Surat::kk', ['filter' => 'isAdmin']);
 $routes->get('/surat_sktm', 'Surat::sktm', ['filter' => 'isAdmin']);

@@ -24,7 +24,7 @@
         <div class="text-center mb-5">
             <h2 class="fw-bolder">
                 <i class="bi bi-file-text"></i> Daftar Surat
-                <p class="lead mb-0 mt-3">Pilih surat yang ingin Anda dibuat!</p>
+                <p class="lead mb-0 mt-3">Pilihan surat yang tersedia disini!</p>
             </h2>
         </div>
         <div class="row gx-5">
