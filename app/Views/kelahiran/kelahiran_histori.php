@@ -60,7 +60,7 @@
                                             <?php if (session()->get('role') == 2) : ?>
                                                 <?php if ($k['status'] == 'dibatalkan' || $k['status'] == 'selesai') : ?>
                                                 <?php else : ?>
-                                                    <a href="/kelahiran/detailkelahiran/<?= $k['id_kelahiran']; ?>" class="btn btn-info" target="blank"><i class="fas fa-info-circle"></i> Detail</a>
+                                                    <a href="/kelahiran/detailkelahiran/<?= $k['id_kelahiran']; ?>" class="btn btn-info"><i class="fas fa-info-circle"></i> Detail</a>
                                                     <a href="/kelahiran/cancelkelahiran/<?= $k['id_kelahiran']; ?>" onclick="return confirm('Apakah anda yakin?')" class="btn btn-danger"><i class="fas fa-window-close"></i> Batal</a>
                                                 <?php endif; ?>
                                             <?php endif; ?>

@@ -60,7 +60,7 @@
                                             <?php if (session()->get('role') == 2) : ?>
                                                 <?php if ($p['status'] == 'dibatalkan' || $p['status'] == 'selesai') : ?>
                                                 <?php else : ?>
-                                                    <a href="/pengantarpindah/detailpindah/<?= $p['id_pindah']; ?>" class="btn btn-info" target="blank"><i class="fas fa-info-circle"></i> Detail</a>
+                                                    <a href="/pengantarpindah/detailpindah/<?= $p['id_pindah']; ?>" class="btn btn-info"><i class="fas fa-info-circle"></i> Detail</a>
                                                     <a href="/pengantarpindah/cancelpindah/<?= $p['id_pindah']; ?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin?')"><i class="fas fa-window-close"></i> Batal</a>
                                                 <?php endif; ?>
                                             <?php endif; ?>

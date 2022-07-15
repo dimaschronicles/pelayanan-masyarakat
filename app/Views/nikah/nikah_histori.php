@@ -57,7 +57,7 @@
                                             <?php if (session()->get('role') == 2) : ?>
                                                 <?php if ($n['status'] == 'dibatalkan' || $n['status'] == 'selesai') : ?>
                                                 <?php else : ?>
-                                                    <a href="/pengantarnikah/detailnikah/<?= $n['id_nikah']; ?>" class="btn btn-info" target="blank"><i class="fas fa-info-circle"></i> Detail</a>
+                                                    <a href="/pengantarnikah/detailnikah/<?= $n['id_nikah']; ?>" class="btn btn-info"><i class="fas fa-info-circle"></i> Detail</a>
                                                     <a href="/pengantarnikah/cancelnikah/<?= $n['id_nikah']; ?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin?')"><i class="fas fa-window-close"></i> Batal</a>
                                                 <?php endif; ?>
                                             <?php endif; ?>

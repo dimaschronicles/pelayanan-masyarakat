@@ -107,7 +107,7 @@ class Waris extends BaseController
             'tanggal_lahir_alm' => $this->request->getVar('tanggal_lahir_alm'),
             'pekerjaan_alm' => $this->request->getVar('pekerjaan_alm'),
             'alamat_alm' => $this->request->getVar('alamat_alm'),
-            'nama_alm' => $this->request->getVar('nama_alm'),
+            'nama_ahli' => $this->request->getVar('nama_ahli'),
             'tempat_lahir_ahli' => $this->request->getVar('tempat_lahir_ahli'),
             'tanggal_lahir_ahli' => $this->request->getVar('tanggal_lahir_ahli'),
             'pekerjaan_ahli' => $this->request->getVar('pekerjaan_ahli'),

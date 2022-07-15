@@ -42,7 +42,7 @@
                     </a>
                 </li>
                 <li class="list-group-item">
-                    <a href="/sktm/historikematian">
+                    <a href="/sktm/historisktm">
                         <i class="fas fa-fw fa-file-alt"></i> Surat Keterangan Tidak Mampu (SKTM)
                     </a>
                 </li>

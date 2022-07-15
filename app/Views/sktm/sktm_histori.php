@@ -60,7 +60,7 @@
                                             <?php if (session()->get('role') == 2) : ?>
                                                 <?php if ($s['status'] == 'dibatalkan' || $s['status'] == 'selesai') : ?>
                                                 <?php else : ?>
-                                                    <a href="/sktm/detailsktm/<?= $s['id_sktm']; ?>" class="btn btn-info" target="blank"><i class="fas fa-info-circle"></i> Detail</a>
+                                                    <a href="/sktm/detailsktm/<?= $s['id_sktm']; ?>" class="btn btn-info"><i class="fas fa-info-circle"></i> Detail</a>
                                                     <a href="/sktm/cancelsktm/<?= $s['id_sktm']; ?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin?')"><i class="fas fa-window-close"></i> Batal</a>
                                                 <?php endif; ?>
                                             <?php endif; ?>

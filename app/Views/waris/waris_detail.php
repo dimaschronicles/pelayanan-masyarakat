@@ -69,7 +69,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <a href="" onclick="window.close();" class="btn btn-primary">Kembali</a>
+                    <a href="/surat_waris" class="btn btn-primary">Kembali</a>
                 </div>
             </div>
         </div>

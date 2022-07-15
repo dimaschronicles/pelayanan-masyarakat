@@ -57,7 +57,7 @@
                                             <?php if (session()->get('role') == 2) : ?>
                                                 <?php if ($w['status'] == 'dibatalkan' || $w['status'] == 'selesai') : ?>
                                                 <?php else : ?>
-                                                    <a href="/waris/detailwaris/<?= $w['id_waris']; ?>" class="btn btn-info" target="blank"><i class="fas fa-info-circle"></i> Detail</a>
+                                                    <a href="/waris/detailwaris/<?= $w['id_waris']; ?>" class="btn btn-info"><i class="fas fa-info-circle"></i> Detail</a>
                                                     <a href="/waris/cancelwaris/<?= $w['id_waris']; ?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin?')"><i class="fas fa-window-close"></i> Batal</a>
                                                 <?php endif; ?>
                                             <?php endif; ?>

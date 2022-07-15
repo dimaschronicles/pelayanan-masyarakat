@@ -17,7 +17,7 @@
         <div class="col">
             <div class="card">
                 <div class="card-header">
-                    <b>Detail Pemohon</b>
+                    <b>Detail User</b>
                 </div>
                 <div class="card-body">
                     <table class="table table-striped">
@@ -44,7 +44,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <a href="" onclick="window.close();" class="btn btn-primary">Kembali</a>
+                    <a href="/user" class="btn btn-primary">Kembali</a>
                 </div>
             </div>
         </div>

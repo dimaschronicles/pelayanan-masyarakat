@@ -52,7 +52,11 @@
                                             <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal<?= $u['id_user']; ?>">
                                                 <i class="fas fa-trash"></i> Hapus
                                             </button>
-                                            <a href="/user/detailuser/<?= $u['id_user']; ?>" class="btn btn-info" target="blank"><i class="fas fa-info-circle"></i> Detail</a>
+                                            <a href="/user_edit/<?= $u['id_user']; ?>" class="btn btn-warning"><i class="fas fa-edit"></i> Edit</a>
+                                            <a href="/user/detailuser/<?= $u['id_user']; ?>" class="btn btn-info"><i class="fas fa-info-circle"></i> Detail</a>
+                                            <?php if ($u['active'] == 0) : ?>
+                                                <a href="/user/aktivasi/<?= $u['id_user']; ?>" class="btn btn-success"><i class="fas fa-check"></i> Aktivasi</a>
+                                            <?php endif; ?>
                                         </td>
                                     </tr>
 

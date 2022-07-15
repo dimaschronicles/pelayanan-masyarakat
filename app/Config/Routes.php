@@ -34,6 +34,10 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+
+$routes->get('/auth', 'Auth::index');
+$routes->get('/register', 'Auth::register');
+$routes->get('/auth/signup', 'Auth::signUp');
 $routes->get('/auth/login', 'Auth::login');
 $routes->get('/logout', 'Auth::logout');
 $routes->get('/block', 'Auth::block');
@@ -48,9 +52,12 @@ $routes->get('/savepass', 'Profil::savePassword');
 // data user
 $routes->get('/user', 'User::index', ['filter' => 'isAdmin']);
 $routes->get('/user_add', 'User::addUser', ['filter' => 'isAdmin']);
+$routes->get('/user_edit/(:any)', 'User::editUser/$1', ['filter' => 'isAdmin']);
 $routes->post('/user', 'User::create', ['filter' => 'isAdmin']);
+$routes->put('/user/(:num)', 'User::update/$1', ['filter' => 'isAdmin']);
 $routes->get('/user/detailuser/(:num)', 'User::detailUser/$1', ['filter' => 'isAdmin']);
 $routes->delete('/user/(:num)', 'User::delete/$1', ['filter' => 'isAdmin']);
+$routes->get('/user/aktivasi/(:num)', 'User::aktivasi/$1', ['filter' => 'isAdmin']);
 
 // menu buat surat ktp, kk, dll. untuk user
 $routes->get('/surat', 'Surat::index');

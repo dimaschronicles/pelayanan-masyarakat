@@ -111,7 +111,6 @@
                                         <td><?= $k['tanggal']; ?></td>
                                         <td>Permohonan KTP</td>
                                         <td><?= $k['nama_lengkap']; ?></td>
-                                        <td><?= $k['status']; ?></td>
                                         <td>
                                             <?php if ($k['status'] == 'menunggu') : ?>
                                                 <span class="badge badge-pill badge-warning"><?= $k['status']; ?></span>
@@ -128,7 +127,6 @@
                                         <td><?= $kartu['tanggal']; ?></td>
                                         <td>Permohonan Kartu Keluarga</td>
                                         <td><?= $kartu['nama_lengkap']; ?></td>
-                                        <td><?= $kartu['status']; ?></td>
                                         <td>
                                             <?php if ($kartu['status'] == 'menunggu') : ?>
                                                 <span class="badge badge-pill badge-warning"><?= $kartu['status']; ?></span>
@@ -145,7 +143,6 @@
                                         <td><?= $ket['tanggal']; ?></td>
                                         <td>Surat Keterangan</td>
                                         <td><?= $ket['nama']; ?></td>
-                                        <td><?= $ket['status']; ?></td>
                                         <td>
                                             <?php if ($ket['status'] == 'menunggu') : ?>
                                                 <span class="badge badge-pill badge-warning"><?= $ket['status']; ?></span>
@@ -162,7 +159,6 @@
                                         <td><?= $p['tanggal']; ?></td>
                                         <td>Surat Pengantar Pindah</td>
                                         <td><?= $p['nama_lengkap']; ?></td>
-                                        <td><?= $p['status']; ?></td>
                                         <td>
                                             <?php if ($p['status'] == 'menunggu') : ?>
                                                 <span class="badge badge-pill badge-warning"><?= $p['status']; ?></span>
@@ -179,7 +175,6 @@
                                         <td><?= $kel['tanggal']; ?></td>
                                         <td>Surat Keterangan Kelahiran</td>
                                         <td><?= $kel['nama_kepkel']; ?></td>
-                                        <td><?= $kel['status']; ?></td>
                                         <td>
                                             <?php if ($kel['status'] == 'menunggu') : ?>
                                                 <span class="badge badge-pill badge-warning"><?= $kel['status']; ?></span>
@@ -196,7 +191,6 @@
                                         <td><?= $kem['tanggal']; ?></td>
                                         <td>Surat Keterangan Kematian</td>
                                         <td><?= $kem['nama_kepkel']; ?></td>
-                                        <td><?= $kem['status']; ?></td>
                                         <td>
                                             <?php if ($kem['status'] == 'menunggu') : ?>
                                                 <span class="badge badge-pill badge-warning"><?= $kem['status']; ?></span>
@@ -213,7 +207,6 @@
                                         <td><?= $s['tanggal']; ?></td>
                                         <td>Surat Keterangan Tidak Mampu</td>
                                         <td><?= $s['nama_lengkap']; ?></td>
-                                        <td><?= $s['status']; ?></td>
                                         <td>
                                             <?php if ($s['status'] == 'menunggu') : ?>
                                                 <span class="badge badge-pill badge-warning"><?= $s['status']; ?></span>
@@ -230,7 +223,6 @@
                                         <td><?= $n['tanggal']; ?></td>
                                         <td>Surat Pengantar Nikah</td>
                                         <td><?= $n['nama']; ?></td>
-                                        <td><?= $n['status']; ?></td>
                                         <td>
                                             <?php if ($n['status'] == 'menunggu') : ?>
                                                 <span class="badge badge-pill badge-warning"><?= $n['status']; ?></span>
@@ -247,7 +239,6 @@
                                         <td><?= $w['tanggal']; ?></td>
                                         <td>Surat Keterangan Waris</td>
                                         <td><?= $w['nama_alm']; ?></td>
-                                        <td><?= $w['status']; ?></td>
                                         <td>
                                             <?php if ($w['status'] == 'menunggu') : ?>
                                                 <span class="badge badge-pill badge-warning"><?= $w['status']; ?></span>

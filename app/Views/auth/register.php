@@ -14,7 +14,7 @@
 
                 <?= session()->getFlashdata('message'); ?>
 
-                <form action="/auth/login" method="POST">
+                <form action="/auth/signup" method="POST">
                     <?= csrf_field(); ?>
                     <!-- Name input-->
                     <div class="form-floating mb-3">
@@ -26,6 +26,30 @@
                     </div>
 
                     <div class="form-floating mb-3">
+                        <input class="form-control <?= ($validation->hasError('nama')) ? 'is-invalid' : ''; ?>" name="nama" id="nama" type="text" placeholder="Masukan nama..." value="<?= old('nama'); ?>" />
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('nama'); ?>
+                        </div>
+                        <label for="nama">Nama Lengkap</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input class="form-control <?= ($validation->hasError('email')) ? 'is-invalid' : ''; ?>" name="email" id="email" type="email" placeholder="Masukan email..." value="<?= old('email'); ?>" />
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('email'); ?>
+                        </div>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input class="form-control <?= ($validation->hasError('no_hp')) ? 'is-invalid' : ''; ?>" name="no_hp" id="no_hp" type="number" placeholder="Masukan no_hp..." value="<?= old('no_hp'); ?>" />
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('no_hp'); ?>
+                        </div>
+                        <label for="no_hp">No HP</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
                         <input class="form-control <?= ($validation->hasError('password')) ? 'is-invalid' : ''; ?>" name="password" id="password" type="password" placeholder="Masukan kata sandi..." />
                         <div class="invalid-feedback">
                             <?= $validation->getError('password'); ?>
@@ -33,13 +57,19 @@
                         <label for="password">Password</label>
                     </div>
 
-                    <!-- Submit Button-->
-                    <div class="d-grid">
-                        <button class="btn btn-primary btn-lg mb-3" type="submit">Masuk</button>
-                        <a href="/register" class="btn btn-outline-secondary mb-1">Daftar Akun</a>
-                        <a href="" class="btn btn-outline-secondary">Lupa Password</a>
+                    <div class="form-floating mb-3">
+                        <input class="form-control <?= ($validation->hasError('password_conf')) ? 'is-invalid' : ''; ?>" name="password_conf" id="password_conf" type="password" placeholder="Konfirmasi password..." />
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('password_conf'); ?>
+                        </div>
+                        <label for="password_conf">Konfirmasi Password</label>
                     </div>
 
+                    <!-- Submit Button-->
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-lg mb-3" type="submit">Daftar</button>
+                        <a href="/auth" class="btn btn-outline-secondary btn-lg">Kembali</a>
+                    </div>
                 </form>
             </div>
         </div>
@@ -47,7 +77,7 @@
 </section>
 
 <!-- Footer-->
-<footer class="py-4 bg-dark fixed-bottom">
+<footer class="py-4 bg-dark">
     <div class="container px-5">
         <p class="m-0 text-center text-white">&copy; <?= date("Y"); ?> Pelayanan Masyarakat</p>
     </div>

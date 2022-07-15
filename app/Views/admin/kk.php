@@ -62,7 +62,7 @@
                                             </button>
                                             <?php if ($k['status'] == 'selesai' || $k['status'] == 'dibatalkan' || $k['status'] == 'ditolak') : ?>
                                             <?php else : ?>
-                                                <a href="/kk/detailkk/<?= $k['id_kk']; ?>" class="btn btn-info" target="blank"><i class="fas fa-info-circle"></i> Detail</a>
+                                                <a href="/kk/detailkk/<?= $k['id_kk']; ?>" class="btn btn-info"><i class="fas fa-info-circle"></i> Detail</a>
                                                 <a href="/kk/printkk/<?= $k['id_kk']; ?>" class="btn btn-primary" target="blank"><i class="fas fa-print"></i> Cetak</a>
                                                 <a href="/kk/donekk/<?= $k['id_kk']; ?>" class="btn btn-success"><i class="fas fa-check"></i> Selesai</a>
                                             <?php endif; ?>
