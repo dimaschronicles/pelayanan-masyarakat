@@ -112,30 +112,6 @@
         </li> -->
     <?php endif; ?>
 
-    <!-- Divider -->
-    <hr class="sidebar-divider">
-
-    <div class="sidebar-heading">
-        Pengaturan
-    </div>
-
-    <!-- Nav Item - Profil -->
-    <li class="nav-item  <?= ($title == "Profil") ? 'active' : ''; ?>">
-        <a class="nav-link" href="/profil">
-            <i class="fas fa-fw fa-user"></i>
-            <span>Profil</span></a>
-    </li>
-
-    <!-- Nav Item - Ganti Password -->
-    <li class="nav-item  <?= ($title == "Ganti Password") ? 'active' : ''; ?>">
-        <a class="nav-link" href="/changepassword">
-            <i class="fas fa-fw fa-key"></i>
-            <span>Ganti Password</span></a>
-    </li>
-
-    <!-- Divider -->
-    <hr class="sidebar-divider d-none d-md-block">
-
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>

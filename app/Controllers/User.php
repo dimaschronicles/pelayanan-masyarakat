@@ -60,10 +60,10 @@ class User extends BaseController
             'no_hp' => [
                 'rules' => 'trim|required|numeric|min_length[11]|max_length[13]',
                 'errors' => [
-                    'required' => 'NIK harus diisi!',
-                    'numeric' => 'NIK harus angka!',
-                    'min_length' => 'NIK kurang dari 11 digit!',
-                    'max_length' => 'NIK lebih dari 13 digit!',
+                    'required' => 'Nomor HP harus diisi!',
+                    'numeric' => 'Nomor HP harus angka!',
+                    'min_length' => 'Nomor HP kurang dari 11 digit!',
+                    'max_length' => 'Nomor HP lebih dari 13 digit!',
                 ]
             ],
             'password' => [
@@ -156,10 +156,10 @@ class User extends BaseController
             'no_hp' => [
                 'rules' => 'trim|required|numeric|min_length[11]|max_length[13]',
                 'errors' => [
-                    'required' => 'NIK harus diisi!',
-                    'numeric' => 'NIK harus angka!',
-                    'min_length' => 'NIK kurang dari 11 digit!',
-                    'max_length' => 'NIK lebih dari 13 digit!',
+                    'required' => 'Nomor HP harus diisi!',
+                    'numeric' => 'Nomor HP harus angka!',
+                    'min_length' => 'Nomor HP kurang dari 11 digit!',
+                    'max_length' => 'Nomor HP lebih dari 13 digit!',
                 ]
             ],
             // 'password' => [

@@ -9,7 +9,7 @@
                 <li class="nav-item"><a class="nav-link" href="#tutorial">Tutorial</a></li>
                 <li class="nav-item"><a class="nav-link" href="#lokasi">Lokasi</a></li>
                 <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
-                <li class="nav-item"><a class="nav-link <?= ($title == 'Login') ? 'active' : ''; ?>" href="/auth">Login</a></li>
+                <li class="nav-item"><a class="nav-link <?= ($title == 'Masuk') ? 'active' : ''; ?>" href="/auth">Masuk</a></li>
             </ul>
         </div>
     </div>

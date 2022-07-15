@@ -18,7 +18,7 @@ class Auth extends BaseController
         }
 
         $data = [
-            'title' => 'Login',
+            'title' => 'Masuk',
             'validation' => \Config\Services::validation(),
         ];
 
@@ -60,7 +60,7 @@ class Auth extends BaseController
                     ]);
                     return redirect()->to('dashboard');
                 } else {
-                    session()->setFlashdata('message', '<div class="alert alert-danger" role="alert">Cek <strong>username</strong> atau <strong>password</strong> anda!</div>');
+                    session()->setFlashdata('message', '<div class="alert alert-danger" role="alert">Cek <strong>NIK</strong> atau <strong>password</strong> anda!</div>');
                     return redirect()->to('auth')->withInput();
                 }
             } else {
@@ -68,7 +68,7 @@ class Auth extends BaseController
                 return redirect()->to('auth')->withInput();
             }
         } else {
-            session()->setFlashdata('message', '<div class="alert alert-danger" role="alert">Cek <strong>username</strong> atau <strong>password</strong> anda!</div>');
+            session()->setFlashdata('message', '<div class="alert alert-danger" role="alert">Cek <strong>NIK</strong> atau <strong>password</strong> anda!</div>');
             return redirect()->to('auth')->withInput();
         }
     }
@@ -76,7 +76,7 @@ class Auth extends BaseController
     public function register()
     {
         $data = [
-            'title' => 'Register',
+            'title' => 'Daftar Akun',
             'validation' => \Config\Services::validation(),
         ];
 
@@ -112,10 +112,10 @@ class Auth extends BaseController
             'no_hp' => [
                 'rules' => 'trim|required|numeric|min_length[11]|max_length[13]',
                 'errors' => [
-                    'required' => 'NIK harus diisi!',
-                    'numeric' => 'NIK harus angka!',
-                    'min_length' => 'NIK kurang dari 11 digit!',
-                    'max_length' => 'NIK lebih dari 13 digit!',
+                    'required' => 'Nomor HP harus diisi!',
+                    'numeric' => 'Nomor HP harus angka!',
+                    'min_length' => 'Nomor HP kurang dari 11 digit!',
+                    'max_length' => 'Nomor HP lebih dari 13 digit!',
                 ]
             ],
             'password' => [
