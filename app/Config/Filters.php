@@ -3,6 +3,7 @@
 namespace Config;
 
 use App\Filters\AuthFilter;
+use App\Filters\ResetFilter;
 use App\Filters\SuratFilter;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
@@ -27,6 +28,7 @@ class Filters extends BaseConfig
         'secureheaders' => SecureHeaders::class,
         'isLoggedIn' => AuthFilter::class,
         'isAdmin' => SuratFilter::class,
+        'isNik' => ResetFilter::class,
     ];
 
     /**

@@ -160,6 +160,94 @@ class Auth extends BaseController
         return redirect()->to('auth')->withInput();
     }
 
+    public function forgotPassword()
+    {
+        $data = [
+            'title' => 'Lupa Password',
+            'validation' => \Config\Services::validation(),
+            'usernik' => $this->db->table('users')->select('nik')->get()->getResultArray(),
+        ];
+
+        return view('auth/forgot', $data);
+    }
+
+    public function forgot()
+    {
+        if (!$this->validate([
+            'nik' => [
+                'rules' => 'trim|required|numeric|min_length[16]|max_length[16]',
+                'errors' => [
+                    'required' => 'NIK harus diisi!',
+                    'numeric' => 'NIK harus angka!',
+                    'min_length' => 'NIK kurang dari 16 digit!',
+                    'max_length' => 'NIK lebih dari 16 digit!',
+                ]
+            ],
+        ])) {
+            return redirect()->to('/forgotpassword')->withInput();
+        }
+
+        $nik = $this->request->getVar('nik');
+        $user_nik = $this->db->table('users')->select('nik')->get()->getResultArray();
+        $nik_array = array_column($user_nik, 'nik');
+
+        if (!in_array($nik, $nik_array)) {
+            session()->setFlashdata('message', '<div class="alert alert-danger" role="alert"><strong>NIK</strong> tidak ada!</div>');
+            return redirect()->to('/forgotpassword')->withInput();
+        } else {
+            session()->set([
+                'reset_nik' => $nik,
+            ]);
+            return redirect()->to('/resetpassword');
+        }
+    }
+
+    public function resetPassword()
+    {
+        $data = [
+            'title' => 'Reset Password',
+            'validation' => \Config\Services::validation(),
+        ];
+
+        return view('auth/reset', $data);
+    }
+
+    public function reset()
+    {
+        if (!$this->validate([
+            'password' => [
+                'rules' => 'trim|required|min_length[8]',
+                'errors' => [
+                    'required' => 'Password harus diisi!',
+                    'min_length' => 'Password kurang dari 8 karakter!',
+                ]
+            ],
+            'password_conf' => [
+                'rules' => 'trim|required|min_length[8]|matches[password]',
+                'errors' => [
+                    'required' => 'Konfirmasi Password harus diisi!',
+                    'min_length' => 'Konfirmasi Password kurang dari 8 karakter!',
+                    'matches' => 'Konfirmasi Password tidak sama dengan Password!',
+                ]
+            ]
+        ])) {
+            return redirect()->to('/resetpassword')->withInput();
+        }
+
+        $nik = $this->request->getVar('nik');
+        $builder = $this->db->table('users');
+        $data = [
+            'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+        ];
+        $builder->where('nik', $nik);
+        $builder->update($data);
+
+        session()->remove('reset_nik');
+
+        session()->setFlashdata('message', '<div class="alert alert-success" role="alert"><strong>Password</strong> anda berhasil direset!</div>');
+        return redirect()->to('/auth')->withInput();
+    }
+
     public function block()
     {
         return view('auth/block');

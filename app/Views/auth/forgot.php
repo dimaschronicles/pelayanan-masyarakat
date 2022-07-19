@@ -7,14 +7,13 @@
         <div class="text-center mb-4">
             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-person-circle"></i></i></div>
             <h2 class="fw-bolder"><?= $title; ?></h2>
-            <p class="lead mb-0">Selamat Datang di Website Pelayanan Desa</p>
         </div>
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-6">
 
                 <?= session()->getFlashdata('message'); ?>
 
-                <form action="/auth/login" method="POST">
+                <form action="/auth/forgot" method="POST">
                     <?= csrf_field(); ?>
                     <!-- Name input-->
                     <div class="form-floating mb-3">
@@ -25,19 +24,10 @@
                         <label for="nik">NIK</label>
                     </div>
 
-                    <div class="form-floating mb-3">
-                        <input class="form-control <?= ($validation->hasError('password')) ? 'is-invalid' : ''; ?>" name="password" id="password" type="password" placeholder="Masukan kata sandi..." />
-                        <div class="invalid-feedback">
-                            <?= $validation->getError('password'); ?>
-                        </div>
-                        <label for="password">Password</label>
-                    </div>
-
                     <!-- Submit Button-->
                     <div class="d-grid">
-                        <button class="btn btn-primary btn-lg mb-3" type="submit">Masuk</button>
-                        <a href="/register" class="btn btn-outline-secondary mb-1">Daftar Akun</a>
-                        <a href="/forgotpassword" class="btn btn-outline-secondary">Lupa Password</a>
+                        <button class="btn btn-primary btn-lg mb-3" type="submit">Reset Password</button>
+                        <a href="/auth" class="btn btn-outline-secondary mb-1">Login</a>
                     </div>
 
                 </form>

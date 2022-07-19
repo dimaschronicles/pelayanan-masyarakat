@@ -42,6 +42,12 @@ $routes->get('/auth/login', 'Auth::login');
 $routes->get('/logout', 'Auth::logout');
 $routes->get('/block', 'Auth::block');
 
+$routes->get('/forgotpassword', 'Auth::forgotPassword');
+$routes->get('/forgot', 'Auth::forgot');
+
+$routes->get('/resetpassword', 'Auth::resetPassword', ['filter' => 'isNik']);
+$routes->get('/reset', 'Auth::reset', ['filter' => 'isNik']);
+
 $routes->get('/dashboard', 'Dashboard::index');
 
 // tambahan
